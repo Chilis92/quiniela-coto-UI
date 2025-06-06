@@ -1,0 +1,87 @@
+<div>
+<form (ngSubmit)="onSubmit()">
+    {{quinielaID}}
+<div>
+<table>
+ 
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Datos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><label>Nombre:</label></th>
+      <td><input [(ngModel)]="quinielaModel.vecino.nombre" type="text" placeholder="Escribe el Nombre" name="nameInput"/></td>
+    </tr>
+    <tr>
+      <th scope="row"><label>Casa #:</label></th>
+      <td><input [(ngModel)]="quinielaModel.vecino.numeroCasa"  type="text" name="homeNumber" placeholder="Numero de casa"/></td>
+    </tr>
+  </tbody>
+
+</table>
+ </div>
+
+<div>
+<table>
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Partido</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><input size="5" type="text"  name="text1" [(ngModel)]="quinielaModel.partidos[0].equipo1.resultado" id="equipo1"/></th>
+      <td><label for="equipo1">{{partidosOficialesList[0].equipo1}} VS <label for="equipo1">{{partidosOficialesList[0].equipo2}}</label></label></td>
+      <td><input size="5" type="text" [(ngModel)]="quinielaModel.partidos[0].equipo2.resultado" name="value1" id="equipo2"/></td>
+    </tr>
+    <tr>
+      <th scope="row"><input size="5" type="text"  name="text1" [(ngModel)]="quinielaModel.partidos[1].equipo1.resultado" id="equipo1"/></th>
+      <td><label for="equipo1">{{partidosOficialesList[1].equipo1}} VS <label for="equipo1">{{partidosOficialesList[1].equipo2}}</label></label></td>
+      <td><input size="5" type="text" [(ngModel)]="quinielaModel.partidos[1].equipo2.resultado" name="value1" id="equipo2"/></td>
+    </tr>
+    <tr>
+      <th scope="row"><input size="5" type="text"  name="text1" [(ngModel)]="quinielaModel.partidos[2].equipo1.resultado" id="equipo1"/></th>
+      <td><label for="equipo1">{{partidosOficialesList[2].equipo1}} VS <label for="equipo1">{{partidosOficialesList[2].equipo2}}</label></label></td>
+      <td><input size="5" type="text" [(ngModel)]="quinielaModel.partidos[2].equipo2.resultado" name="value1" id="equipo2"/></td>
+    </tr>
+    <tr>
+      <th scope="row"><input size="5" type="text"  name="text1" [(ngModel)]="quinielaModel.partidos[3].equipo1.resultado" id="equipo1"/></th>
+      <td><label for="equipo1">{{partidosOficialesList[3].equipo1}} VS <label for="equipo1">{{partidosOficialesList[3].equipo2}}</label></label></td>
+      <td><input size="5" type="text" [(ngModel)]="quinielaModel.partidos[3].equipo2.resultado" name="value1" id="equipo2"/></td>
+    </tr>
+    <tr>
+      <th scope="row"><input size="5" type="text"  name="text1" [(ngModel)]="quinielaModel.partidos[4].equipo1.resultado" id="equipo1"/></th>
+      <td><label for="equipo1">{{partidosOficialesList[4].equipo1}} VS <label for="equipo1">{{partidosOficialesList[4].equipo2}}</label></label></td>
+      <td><input size="5" type="text" [(ngModel)]="quinielaModel.partidos[4].equipo2.resultado" name="value1" id="equipo2"/></td>
+    </tr>
+    <tr>
+      <th scope="row"><input size="5" type="text"  name="text1" [(ngModel)]="quinielaModel.partidos[5].equipo1.resultado" id="equipo1"/></th>
+      <td><label for="equipo1">{{partidosOficialesList[5].equipo1}} VS <label for="equipo1">{{partidosOficialesList[5].equipo2}}</label></label></td>
+      <td><input size="5" type="text" [(ngModel)]="quinielaModel.partidos[5].equipo2.resultado" name="value1" id="equipo2"/></td>
+    </tr>
+    <tr>
+      <th scope="row"><input size="5" type="text"  name="text1" [(ngModel)]="quinielaModel.partidos[6].equipo1.resultado" id="equipo1"/></th>
+      <td><label for="equipo1">{{partidosOficialesList[6].equipo1}} VS <label for="equipo1">{{partidosOficialesList[6].equipo2}}</label></label></td>
+      <td><input size="5" type="text" [(ngModel)]="quinielaModel.partidos[6].equipo2.resultado" name="value1" id="equipo2"/></td>
+    </tr>
+    <tr>
+      <th scope="row"><input size="5" type="text"  name="text1" [(ngModel)]="quinielaModel.partidos[7].equipo1.resultado" id="equipo1"/></th>
+      <td><label for="equipo1">{{partidosOficialesList[7].equipo1}} VS <label for="equipo1">{{partidosOficialesList[7].equipo2}}</label></label></td>
+      <td><input size="5" type="text" [(ngModel)]="quinielaModel.partidos[7].equipo2.resultado" name="value1" id="equipo2"/></td>
+    </tr>
+  </tbody>
+
+</table>
+</div>
+ <button class="form-submit-button" type="submit">Enviar</button>
+ </form>
+</div>
+
+
+
+
